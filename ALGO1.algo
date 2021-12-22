@@ -16,9 +16,12 @@ BEGIN
     IF (SENTENCE[i]=" ") THEN
     nb_of_words=nb_of_words+1
     END_IF
-IF (SENTENCE[i]=between a and z) THEN
-    nb_of_vowels=nb_of_vowels+1
-END_IF
+    IF (SENTENCE[i]=between a and z) THEN
+        IF(SENTENCE[i]is a,e,i,o,u)
+        nb_of_vowels=nb_of_vowels+1
+    ELSE
+      consonants=consonants+1
+    END_IF
     END_FOR
     Write(nb_of_words)
     Write(nb_of_vowels)
